@@ -57,6 +57,35 @@
 
 /******************/
 
+
 /*BODY*/
 
+.service{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+}
+.service{
+        width: 10%;
+}
+.title-service{
+    text-align: center;
+}
+.title-inter{
+     margin: 0 50px;
+}
+
+.serv-line1 .column1{
+        padding: 0 50px;
+}
+
+.serv-line2, .serv-line3, .serv-line4, .serv-line5 .column1{
+        padding: 0 50px;
+        text-align: center;
+}
+
+.serv-line2, .serv-line3, .serv-line4, .serv-line5 .column2{
+        padding: 0 50px;
+        text-align: center;
+}
 
