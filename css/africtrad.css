@@ -1,0 +1,62 @@
+/*CSS AFRICTRAD : WEBDESIGN*/
+
+/*GoogleFonts*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
+/*HEADER*/
+
+    /*NAV BAR*/
+    header .nav-bar .bouton {
+        background-color: blue;
+        text-align: center;
+        padding : 8%;
+        margin : 3%
+    }
+
+    header .nav-bar img{
+        max-width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-top:3%;
+        margin-right: auto
+
+    }
+
+    /******************/
+
+    /*BANNIERE*/
+    header .banniere{
+        background-image: url("../src/img/banniere.png");
+        background-size : cover;
+        background-repeat: no-repeat;
+        width : 100%;
+    }
+
+    header .banniere #ban{
+        /* visibility: hidden;*/
+        position: relative;
+        top:100px;
+        left: 200px;
+        width: 100%;
+        z-index: 0;
+    }
+
+    header #logoafrictrad{
+        width : 50%;
+        position: absolute;
+        z-index: 0;
+    }
+
+    /******************/
+
+
+    img{
+        width : 100%;
+    }
+
+/******************/
+
+/*BODY*/
+
+
