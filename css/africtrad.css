@@ -4,22 +4,41 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 
+/*GENERAL*/
+    img{
+        width : 100%;
+    }
+
+    a , a:visited {
+        text-decoration: none;
+        text-decoration-color: white;
+    }
+    
+    body{
+        font-family : 'Open+Sans', serif;
+    }
+/******************/
+
+
 /*HEADER*/
 
     /*NAV BAR*/
     header .nav-bar .bouton {
-        background-color: blue;
+        background-color: #f9ad3f;
         text-align: center;
-        padding : 8%;
-        margin : 3%
+        color: white;
+        font-size : 26px;
+        
+        padding : 6%;
+        margin : 3%;
+        margin-top : 1%;
     }
 
     header .nav-bar img{
-        max-width: 90%;
+        max-width: 80%;
         display: block;
         margin-left: auto;
-        margin-top:3%;
-        margin-right: auto
+        margin-right: auto;
 
     }
 
@@ -30,30 +49,69 @@
         background-image: url("../src/img/banniere.png");
         background-size : cover;
         background-repeat: no-repeat;
-        width : 100%;
+        position: relative;
+
     }
 
     header .banniere #ban{
-        /* visibility: hidden;*/
-        position: relative;
-        top:100px;
-        left: 200px;
-        width: 100%;
-        z-index: 0;
+        visibility: hidden;
     }
 
-    header #logoafrictrad{
-        width : 50%;
+    header .banniere #logoafrictrad{
+        width : 40%;
         position: absolute;
-        z-index: 0;
+        top : 50%;
+        left : 50%;
+        transform: translate(-50%,-50%);
+        /*
+        Pour superposer des images 
+        Image de fond  : positon relative
+        Image superposée : position absolute
+        Ajouter top : 50%, left : 50%, transform: translate (-50%,-50%) 
+        pour centrer l'image enfant
+        */
+        
     }
 
     /******************/
 
-
-    img{
-        width : 100%;
+/*A PROPOS*/
+    body #apropos{
+        background-color: #3d3d3d;
+        color : white;
     }
+
+    body #apropos h2{
+        color : #f9ad3f;
+        margin-left : 10%;
+        padding-top : 1%;
+        padding-bottom: 1%;
+    }
+
+    body #apropos .content{
+        color : white;
+        margin-left : 10%;
+        margin-right: 10%;
+        padding-bottom: 2%;
+    }
+
+/******************/
+/*CONTACT*/
+
+    body #contact-form {
+        color : black;
+        border-color : #f9ad3f;
+        border-width: 5px;
+        text-align: center;
+        border-style: solid;
+        padding-bottom: 10%;
+        padding-top: 2%;
+        margin: auto;
+    }
+
+/******************/
+
+    
 
 /******************/
 
