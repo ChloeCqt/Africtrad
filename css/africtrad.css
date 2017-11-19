@@ -5,18 +5,18 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 
 /*GENERAL*/
-    img{
-        width : 100%;
-    }
+img{
+    width : 100%;
+}
 
-    a , a:visited {
-        text-decoration: none;
-        text-decoration-color: white;
-    }
-    
-    body{
-        font-family : 'Open+Sans', serif;
-    }
+a , a:visited {
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+body{
+    font-family : 'Open Sans', serif;
+}
 /******************/
 
 
@@ -27,11 +27,13 @@
         background-color: #f9ad3f;
         text-align: center;
         color: white;
-        font-size : 26px;
+        font-size : 24px;
+        font-family : 'Fjalla One', serif;
         
-        padding : 6%;
+        padding-top : 3%;
+        padding-bottom : 3%;
         margin : 3%;
-        margin-top : 1%;
+        margin-top : 3%;
     }
 
     header .nav-bar img{
@@ -74,42 +76,88 @@
     }
 
     /******************/
+    /*SEARCH BAR*/
+    header .banniere #searchbar{
+        position: absolute;
+        top : 15%;
+        left : 93%;
+        transform: translate(-95%,-95%);
+        border-color : blue;
+
+    }
+    /******************/
+/******************/
 
 /*A PROPOS*/
-    body #apropos{
-        background-color: #3d3d3d;
-        color : white;
-    }
+body #apropos{
+    background-color: #3d3d3d;
+    color : white;
+}
 
+    /*TITRE*/
     body #apropos h2{
         color : #f9ad3f;
         margin-left : 10%;
-        padding-top : 1%;
-        padding-bottom: 1%;
+        padding-top : 2%;
+        padding-bottom: 2%;
+        font-size: 30px;
+        font-family: 'Fjalla One', serif;
     }
-
+    /******************/    
+    /*CONTENU*/
     body #apropos .content{
         color : white;
+        font-size: 15px;
         margin-left : 10%;
         margin-right: 10%;
         padding-bottom: 2%;
+        line-height: 15pt;
     }
+    /******************/
 
+    
 /******************/
+
 /*CONTACT*/
 
-    body #contact-form {
-        color : black;
-        border-color : #f9ad3f;
-        border-width: 5px;
-        text-align: center;
-        border-style: solid;
-        padding-bottom: 10%;
-        padding-top: 2%;
-        margin: auto;
-    }
+body #contact-form {
+    text-align: center;
+    padding-bottom: 10%;
+    padding-top: 2%;
+    margin: auto;
+}
+    /*TITRE*/
+    body #contact-form h2{
 
+        padding-top : 2%;
+        padding-bottom: 2%;
+        font-size: 30px;
+        font-family: 'Fjalla One', serif;
+    }
+    /******************/
 /******************/
+
+/*NOS CLIENTS*/
+body #clients{
+    color : black;
+    text-align: center;
+    border-style: solid;
+    border-color : #f9ad3f;
+    border-width: 5px;
+    padding-bottom: 10%;
+    padding-top: 2%;
+    margin: auto;
+}
+    /*TITRE*/
+    body #clients h2 {
+        padding-top : 2%;
+        padding-bottom: 2%;
+        font-size: 30px;
+        font-family: 'Fjalla One', serif;
+    }
+    /******************/
+/******************/
+
 
     
 
@@ -137,6 +185,7 @@
         padding: 0 50px;
 }
 
+.serv-line2, .serv-line3, .serv-line4, .serv-line5 .column1{
 .serv-line2, .serv-line3, .serv-line4, .serv-line5 .column1{
         padding: 0 50px;
         text-align: center;
