@@ -128,12 +128,13 @@ body #contact-form {
 }
     /*TITRE*/
     body #contact-form h2{
-
         padding-top : 2%;
         padding-bottom: 2%;
         font-size: 30px;
         font-family: 'Fjalla One', serif;
     }
+    /******************/
+    /*Formulaire (Florine)*/
     /******************/
 /******************/
 
@@ -156,12 +157,45 @@ body #clients{
         font-family: 'Fjalla One', serif;
     }
     /******************/
+    /*LOGOS*/
+    body #clients .logos img  {
+        max-width: 100px;
+        padding-left: 2%;
+        padding-right: 2%;
+        text-align: center;
+        vertical-align: middle;
+    }
+    /******************/
 /******************/
 
+/*FOOTER*/
+footer {
+    background-color:#3d3d3d; 
+    padding-top: 2%;
+    padding-bottom:7%;
+}
 
+footer .col.span_1_of_3 img{
+    width : 50%;
+    padding-left: 40%;
+}
+
+footer div{
+    font-family: "Open Sans";
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 10pt;
     
+}
+
+footer div#cpr{
+    text-align: right;
+    margin: auto;
+}
 
 /******************/
+
 
 
 /*BODY*/
