@@ -250,6 +250,36 @@ body #apropos{
     }
     /******************/
 
+/******************** DEVIS ********************/
+#devis{
+    background-color: #ffa20c;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    font-family: 'Fjalla One', serif;
+}
+
+#devis h2{
+    color: #fff;
+    padding: 2px;
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+#bt{
+    margin-left: 19%;
+}
+
+.bouton-devis {
+    margin-right: 15%;
+	padding:15px;
+	background:#fff;
+	color: #ffa20c;
+    text-align: center;
+	width:150px;
+	border-radius:2px;
+	border:none;
+    display: inline-block;
+}
     
 /******************/
 
@@ -257,7 +287,7 @@ body #apropos{
 
 body #contact-form {
     text-align: center;
-    padding-bottom: 10%;
+    padding-bottom: 3%;
     padding-top: 2%;
     margin: auto;
 }
@@ -267,9 +297,41 @@ body #contact-form {
         padding-bottom: 2%;
         font-family: 'Fjalla One', serif;
     }
-    /******************/
-    /*Formulaire (Florine)*/
-    /******************/
+
+
+/******************** CONTACT ********************/
+#contact{
+    background-color: #fff;
+}
+
+#contact h2, h4{
+    color: #3d3d3d;
+    text-align: center;
+}
+
+#contact-form{
+    text-align: center;
+}
+
+#input-name, #input-prenom, #input-email, #input-subject, #input-message, #input-langueSource, #input-langueArrivee, #input-file{
+    border: 1px solid #ffa20c;
+    margin: 8px;
+    padding: 8px;
+    width: 20%;
+}
+
+#input-submit{
+    margin: 8px;
+    padding: 8px;
+	background: #ffa20c;
+    text-align: center;
+	color: #fff;
+	width: 150px;
+	border-radius: 2px;
+	border: none;
+}
+
+/******************/
 /******************/
 
 /*NOS CLIENTS*/
