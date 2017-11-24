@@ -17,6 +17,11 @@ a , a:visited {
 body{
     font-family : 'Open Sans', serif;
 }
+
+h2 {
+    font-size: 190%;
+    line-height: 90px;
+}
 /******************/
 
 
@@ -27,9 +32,8 @@ body{
         background-color: #f9ad3f;
         text-align: center;
         color: white;
-        font-size : 24px;
+        font-size : 150%;
         font-family : 'Fjalla One', serif;
-        
         padding-top : 3%;
         padding-bottom : 3%;
         margin : 3%;
@@ -44,6 +48,15 @@ body{
 
     }
 
+    header .section{
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        background: white;
+    }
+
     /******************/
 
     /*BANNIERE*/
@@ -51,12 +64,13 @@ body{
         background-image: url("../src/img/banniere.png");
         background-size : cover;
         background-repeat: no-repeat;
+        background-attachment: fixed;
         position: relative;
 
     }
 
     header .banniere #ban{
-        visibility: hidden;
+        visibility: hidden; 
     }
 
     header .banniere #logoafrictrad{
@@ -85,6 +99,128 @@ body{
         border-color : blue;
 
     }
+    .sb-search {
+        position: relative;
+        margin-top: 10px;
+        width: 0%;
+        min-width: 60px;
+        height: 60px;
+        float: right;
+        overflow: hidden;
+
+        -webkit-transition: width 0.3s;
+        -moz-transition: width 0.3s;
+        transition: width 0.3s;
+
+        -webkit-backface-visibility: hidden;
+    }
+
+    .sb-search-input {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: none;
+        outline: none;
+        background: #fff;
+        margin: 0;
+        padding: 20px 65px 20px 20px;
+        font-family: inherit;
+        font-size: 20px;
+        color: #2c3e50;
+    }
+
+    input[type="search"].sb-search-input {
+        -webkit-appearance: none;
+        -webkit-border-radius: 0px;
+    }
+
+    .sb-search-input::-webkit-input-placeholder {
+        color: #efb480;
+    }
+
+    .sb-search-input:-moz-placeholder {
+        color: #efb480;
+    }
+
+    .sb-search-input::-moz-placeholder {
+        color: #efb480;
+    }
+
+    .sb-search-input:-ms-input-placeholder {
+        color: #efb480;
+    }
+
+    .sb-icon-search,
+    .sb-search-submit  {
+        width: 60px;
+        height: 70px;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        line-height: 60px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+
+    .sb-search-submit {
+        background: #fff; /* IE needs this */
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
+        filter: alpha(opacity=0); /* IE 5-7 */
+        opacity: 0;
+        color: transparent;
+        border: none;
+        outline: none;
+    }
+
+    .sb-icon-search {
+        color: #fff;
+        background: #f9ad3f;
+        font-size: 22px;
+        font-family: 'icomoon';
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .sb-icon-search:before {
+        content: "\e000";
+    }
+
+    @font-face {
+        font-family: 'icomoon';
+        src:url('../fonts/icomoon/icomoon.eot');
+        src:url('../fonts/icomoon/icomoon.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/icomoon/icomoon.woff') format('woff'),
+            url('../fonts/icomoon/icomoon.ttf') format('truetype'),
+            url('../fonts/icomoon/icomoon.svg#icomoon') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    .sb-search.sb-search-open,
+    .no-js .sb-search {
+        width: 100%;
+    }
+
+    .sb-search.sb-search-open .sb-icon-search,
+    .no-js .sb-search .sb-icon-search {
+        background: #f9ad3f;
+        color: #fff;
+    }
+
+    .sb-search{
+    position: absolute;
+        top : 25%;
+        left : 95%;
+        transform: translate(-95%,-95%);
+    }
     /******************/
 /******************/
 
@@ -100,14 +236,13 @@ body #apropos{
         margin-left : 10%;
         padding-top : 2%;
         padding-bottom: 2%;
-        font-size: 30px;
         font-family: 'Fjalla One', serif;
     }
     /******************/    
     /*CONTENU*/
     body #apropos .content{
         color : white;
-        font-size: 15px;
+        font-size: 95%;
         margin-left : 10%;
         margin-right: 10%;
         padding-bottom: 2%;
@@ -130,7 +265,6 @@ body #contact-form {
     body #contact-form h2{
         padding-top : 2%;
         padding-bottom: 2%;
-        font-size: 30px;
         font-family: 'Fjalla One', serif;
     }
     /******************/
@@ -153,7 +287,6 @@ body #clients{
     body #clients h2 {
         padding-top : 2%;
         padding-bottom: 2%;
-        font-size: 30px;
         font-family: 'Fjalla One', serif;
     }
     /******************/
@@ -185,7 +318,7 @@ footer div{
     padding: 0;
     margin: 0;
     color: white;
-    font-size: 10pt;
+    font-size: 60%;
     
 }
 
@@ -200,33 +333,66 @@ footer div#cpr{
 
 /*BODY*/
 
+
+/* SERVICES */
+.service-container{
+    padding: 5% 0;
+}
+/* .service-container p{
+    font-family: 'Open Sans';
+} */
 .service{
     display: grid;
     width: 100%;
     grid-template-columns: 50% 50%;
 }
-.service{
-        width: 10%;
+.service img{
+    /* width: 100%; */
+}
+.img-service{
+    width: 100%;
+}
+.icon{
+    width: 10%;
+    padding: 2% 0 5% 0;
 }
 .title-service{
+    font-family: 'Fjalla One';
     text-align: center;
+}
+.text-service{
+    padding: 0 5% 0 5%;
+    font-size: 110%;
+    line-height: 30px;
+}
+.title-column{
+    font-family: 'Fjalla One'; 
+    font-size: 120%;
+    line-height: 50px;
+    letter-spacing: 9px;
 }
 .title-inter{
      margin: 0 50px;
 }
 
 .serv-line1 .column1{
-        padding: 0 50px;
+    padding: 0 50px;
+}
+.icon-service{
+    padding: 5% 2%;
+}
+.icon-service p{
+    line-height: 25px;
 }
 
-.serv-line2, .serv-line3, .serv-line4, .serv-line5 .column1{
-.serv-line2, .serv-line3, .serv-line4, .serv-line5 .column1{
-        padding: 0 50px;
-        text-align: center;
+.serv-line2, .serv-line3 .column1{
+    text-align: center;
+}
+.serv-line3 .column2{
+    text-align: center;
 }
 
-.serv-line2, .serv-line3, .serv-line4, .serv-line5 .column2{
-        padding: 0 50px;
-        text-align: center;
-}
+/* END SERVICES */
 
+font-family: 'Fjalla One';
+font-family: 'Open Sans';

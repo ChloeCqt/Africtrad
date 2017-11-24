@@ -9,21 +9,23 @@
         <script src=""></script>
         
         <!-- Stylesheets -->
-	<link rel="stylesheet" href="css/html5reset.css" media="all">
-	<link rel="stylesheet" href="css/col.css" media="all">
-	<link rel="stylesheet" href="css/2cols.css" media="all">
-	<link rel="stylesheet" href="css/3cols.css" media="all">
-	<link rel="stylesheet" href="css/4cols.css" media="all">
-	<link rel="stylesheet" href="css/5cols.css" media="all">
-	<link rel="stylesheet" href="css/6cols.css" media="all">
-	<link rel="stylesheet" href="css/7cols.css" media="all">
-	<link rel="stylesheet" href="css/8cols.css" media="all">
-	<link rel="stylesheet" href="css/9cols.css" media="all">
-	<link rel="stylesheet" href="css/10cols.css" media="all">
-	<link rel="stylesheet" href="css/11cols.css" media="all">
-	<link rel="stylesheet" href="css/12cols.css" media="all">
-        
-    <link rel="stylesheet" href="css/africtrad.css" media="all">
+        <link rel="stylesheet" href="css/html5reset.css" media="all">
+        <link rel="stylesheet" href="css/col.css" media="all">
+        <link rel="stylesheet" href="css/2cols.css" media="all">
+        <link rel="stylesheet" href="css/3cols.css" media="all">
+        <link rel="stylesheet" href="css/4cols.css" media="all">
+        <link rel="stylesheet" href="css/5cols.css" media="all">
+        <link rel="stylesheet" href="css/6cols.css" media="all">
+        <link rel="stylesheet" href="css/7cols.css" media="all">
+        <link rel="stylesheet" href="css/8cols.css" media="all">
+        <link rel="stylesheet" href="css/9cols.css" media="all">
+        <link rel="stylesheet" href="css/10cols.css" media="all">
+        <link rel="stylesheet" href="css/11cols.css" media="all">
+        <link rel="stylesheet" href="css/12cols.css" media="all">
+        <script src="js/modernizr.custom.js"></script>
+
+
+        <link rel="stylesheet" href="css/africtrad.css" media="all">
 
 
     </head>
@@ -73,10 +75,21 @@
         
         <div class="banniere">
             <img  id="ban" src="src/img/banniere.png" >
-            <form action="" class="formulaire" id="searchbar">
-                <input class="champ" type="text" value="Search...)"/>
-                <input class="bouton" type="button" value=""/>   
-            </form>
+            
+            <div id="sb-search" class="sb-search">
+                <form>
+                    <input class="sb-search-input" placeholder="Rechercher..." type="text" value="" name="search" id="search">
+                    <input class="sb-search-submit" type="submit" value="">
+                    <span class="sb-icon-search"></span>
+                </form>
+            </div>
+            <div>
+            	<script src="js/classie.js"></script>
+                <script src="js/uisearch.js"></script>
+                <script>
+                    new UISearch( document.getElementById( 'sb-search' ) );
+                </script>
+            </div>
             
             <div id="logoafrictrad">
                 <img  src="src/img/Logo.png" alt="Logo Africtrad">
@@ -109,6 +122,78 @@
                 Africtrad accompagne les institutions gouvernementales et/ou internationales sur leurs différentes problématiques linguistiques.
                 Avec Africtrad, c’est l’assurance d’un service linguistique de qualité, en temps et en heure !
             </div>
+        </div>
+        <div class="service-container">
+                <h2 class="title-service">NOS SERVICES</h2>
+                <div class="service serv-line1">
+                    <div class="column1 text-service">
+                        <p class="title-column">TRADUCTION</p>
+                        <p>Chez Africtrad nous traduisons à partir et vers les principales langues de travail internationales : français, anglais, espagnol, portugais, arabe…
+                            Grâce à notre vaste réseau de collaborateurs et à l’utilisation des outils d’aide à la traduction, nous vous assurons la meilleure qualité ! 
+                            Chez Africtrad, nous savons traiter de grands volumes, même lorsque les délais sont serrés. Mais surtout, nous nous engageons à produire des traductions garantissant la cohérence de votre style et de votre terminologie.
+                            Nous couvrons une large palette de domaines : 
+                        </p>
+                    </div>
+                    <div class="column2">
+                        <img class="img-service" src="src/img/service1.jpg">
+                    </div>
+                </div>
+                <div class="service serv-line2">
+                    <div class="column1 icon-service">
+                        <img class="icon" src="src/img/icon1.jpg">
+                        <h3 class="title-column">TRADUCTION GÉNÉRAL</h3>
+                        <p>(rapport d’activités, lettres, discours…)</p>
+                    </div>
+                    <div class=" icon-service">
+                        <img class="icon" src="src/img/icon2.jpg">
+                        <h3 class="title-column">TRADUCTIONS TECHNIQUES ET SPÉCIALISÉS</h3>
+                        <p>(juridique, médicale, financière, marketing, informatique, touristique…)</p>
+                    </div>
+                </div>
+                <div class="service serv-line3">
+                    <div class="column1 icon-service">
+                        <img class="icon" src="src/img/icon3.jpg">
+                        <h3 class="title-column">TRADUCTION ASSERMENTÉE</h3>
+                        <p>(actes d’état civils, actes notariés, diplômes…)</p>
+                    </div>
+                    <div class="column2 icon-service">
+                        <img class="icon" src="src/img/icon4.jpg">
+                        <h3 class="title-column">TRADUCTIONS AUTOMATIQUE HUMANISÉE</h3>
+                        <p>Vous voulez rédiger un email à un collègue anglophone et vous n’êtes pas tout à fait sûr de vous. Vous voulez comprendre un texte court que vousvenez de recevoir ou en rédiger un, faite appel  nos traducteurs à travers notre service de chat 24h/24 ! finies les mauvaises surprises des sites de traduction automatique !</p>
+                    </div>
+                </div>
+                <div class="service serv-line4">
+                    <div class="column2">
+                        <img class="img-service" src="src/img/service2.jpg">
+                    </div>
+                    <div class="column1 text-service">
+                            <h3 class="title-column">COURS DE LANGUE</h3>
+                            <p>Vous êtes cadre d’entreprise dynamique ou vous travaillez régulièrement avec des partenaires anglophones, hispanophones ou encore lusophones, (re)prenez confiance en vous grâce à nos cours de perfectionnement : rédaction de courriers électroniques, présentation de rapports ou rendez-vous téléphoniques, nous vous aiderons à tout maîtriser et à communiquer avec aisance avec vos partenaires et avec nos différentes formules. <br />
+                                • Groupée <br />
+                                • Individualisée <br />
+                                • En ligne<br />
+                                • En présentiel<br />
+                            </p>
+                    </div>
+                </div>
+                <h3 class="title-inter title-column">INTERPRETATION</h3>
+                <div class="service serv-line5">
+                    <div class="column1 text-service">
+                        <p>Interprétation de conférence</p>
+                            <p>Africtrad orioise également un service d'interprétation de conférence de qualité internationale. Pour vos réunions et conférences multilingues de taille réduite ou élargie, nous mettons à votre disposition nos équipes d'interprètes professionnels. Nous pouvons également mettre à votre disposition notre matériel technique (cabines, écouteurs, micros) Nous couvrons les principales langues de travail :<br />
+                            • Français<br />
+                            • Anglais<br />
+                            • Portugais<br />
+                            • Arabe<br />
+                            • Espagnol<br />
+                        </p>
+                    </div>
+                    <div class="column2 text-service">
+                        <p>Interprétation consécutive</p>
+                            <p>pour vos réunions individuelles, en bilatérale ou en petit groupe ou encore vos visites de sites, nous vous proposon un service d'interprètation consécutive de proximité et de grand qualité dans toutes nos langues de travail.
+                            Africtrad possède une solide expérience dans les accompagnements officiels. Il vous assure la rigueur et la discrétion.</p>
+                    </div>
+                </div>
         </div>
         <div class="col span_1_of_4">
         </div>
