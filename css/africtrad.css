@@ -29,7 +29,6 @@ body{
         color: white;
         font-size : 24px;
         font-family : 'Fjalla One', serif;
-        
         padding-top : 3%;
         padding-bottom : 3%;
         margin : 3%;
@@ -42,6 +41,15 @@ body{
         margin-left: auto;
         margin-right: auto;
 
+    }
+
+    header .section{
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        background: white;
     }
 
     /******************/
@@ -327,33 +335,54 @@ footer div#cpr{
 
 /*BODY*/
 
+
+/* SERVICES */
+.service-container p{
+    font-family: 'Open Sans';
+}
 .service{
     display: grid;
     width: 100%;
     grid-template-columns: 50% 50%;
 }
-.service{
-        width: 10%;
+.service img{
+    /* width: 100%; */
+}
+.img-service{
+    width: 100%;
+}
+.icon{
+    width: 10%;
 }
 .title-service{
+    font-family: 'Fjalla One';
     text-align: center;
+}
+.title-column{
+    font-family: 'Fjalla One'; 
 }
 .title-inter{
      margin: 0 50px;
 }
 
 .serv-line1 .column1{
-        padding: 0 50px;
+    padding: 0 50px;
+}
+.text-service{
+    padding: 2%;
+}
+.icon-service{
+    padding: 3%;
 }
 
-.serv-line2, .serv-line3, .serv-line4, .serv-line5 .column1{
-.serv-line2, .serv-line3, .serv-line4, .serv-line5 .column1{
-        padding: 0 50px;
-        text-align: center;
+.serv-line2, .serv-line3 .column1{
+    text-align: center;
+}
+.serv-line3 .column2{
+    text-align: center;
 }
 
-.serv-line2, .serv-line3, .serv-line4, .serv-line5 .column2{
-        padding: 0 50px;
-        text-align: center;
-}
+/* END SERVICES */
 
+font-family: 'Fjalla One';
+font-family: 'Open Sans';
