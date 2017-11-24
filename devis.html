@@ -32,8 +32,11 @@
     <link rel="stylesheet" href="css/devis.css" media="all">
     
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
-
+        
+        <!-- JS Search Bar -->
+        <script src="js/modernizr.custom.js"></script>
+        
+        
     </head>
         
     
@@ -85,12 +88,20 @@
 
        <div id="banniere2">
             <div class="wrap">
-                <div class="search">
-                    <input type="text" class="searchTerm" placeholder="Rechercher...">
-                    <button type="submit" class="searchButton">
-                    <i class="fa fa-search"></i>
-                    </button>
+                <div id="sb-search" class="sb-search">
+                <form>
+                    <input class="sb-search-input" placeholder="Rechercher..." type="text" value="" name="search" id="search">
+                    <input class="sb-search-submit" type="submit" value="">
+                    <span class="sb-icon-search"></span>
+                </form>
+                <div>
+                    <script src="js/classie.js"></script>
+                    <script src="js/uisearch.js"></script>
+                    <script>
+                        new UISearch( document.getElementById( 'sb-search' ) );
+                    </script>
                 </div>
+            </div>
                
             </div>
             
