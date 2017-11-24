@@ -463,6 +463,44 @@ footer div#cpr{
 }
 
 /* END SERVICES */
+@media (max-width: 1920px) {
+    
+}
+@media (max-width: 1440px) {
+    
+}
+@media (max-width: 1150px) {
+    
+}
+@media (max-width: 768px) {
+        
+}
+@media (max-width: 640px) {
 
-font-family: 'Fjalla One';
-font-family: 'Open Sans';
+        /* SERVICE */
+    .service{
+        grid-template-columns: 100%;
+        padding: 0 15px;
+    }
+    .text-service{
+        font-size: 80%;
+        line-height: 20px;
+        padding: 0 15px;
+        }
+    .title-column{
+        font-size: 100%;
+        letter-spacing: 5px;
+        line-height: 30px;
+    }
+    .icon{
+        width: 25%;
+    }
+   .serv-line1 .column1 {
+        padding: 0 15px;
+    }
+        /* END SERVICE */
+}
+
+@media (max-width: 320px) {
+    
+}
