@@ -40,6 +40,14 @@ h2 {
         margin-top : 3%;
     }
 
+    header .nav-bar .bouton:hover {
+        background-color: #ffa119;
+        border-radius: 20%;
+        transition: 0.4s;  
+    }
+
+    header .nav-bar .bouton
+
     header .nav-bar img{
         max-width: 80%;
         display: block;
@@ -178,7 +186,7 @@ h2 {
 
     .sb-icon-search {
         color: #fff;
-        background: #f9ad3f;
+        background: #ffa119;
         font-size: 22px;
         font-family: 'icomoon';
         speak: none;
@@ -211,7 +219,7 @@ h2 {
 
     .sb-search.sb-search-open .sb-icon-search,
     .no-js .sb-search .sb-icon-search {
-        background: #f9ad3f;
+        background: #ffa119;
         color: #fff;
     }
 
