@@ -475,7 +475,15 @@ footer div#cpr{
 @media (max-width: 768px) {
         
 }
+@media (min-width: 641px) {
+    .mobile{
+        display: none;
+    }
+}
 @media (max-width: 640px) {
+    .desktop{
+        display: none;
+    }
 
         /* SERVICE */
     .service{
