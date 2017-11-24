@@ -23,6 +23,65 @@ a{
     margin-left: 31%;
 }
 
+/******************** Search bar ********************/
+.search {
+  width: 100%;
+  position: relative;
+    
+}
+
+.searchTerm {
+  float: left;
+  width: 100%;
+  border: 3px solid #ffa20c;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+  color: #fff;
+}
+
+.searchTerm:focus{
+  color: #ffa20c;
+}
+
+i{
+    color: #fff;
+    width: 10%;
+}
+
+.searchButton {
+  position: absolute;  
+  right: -50px;
+  width: 40px;
+  height: 36px;
+  border: 1px solid #ffa20c;
+  background: #ffa20c;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 20%;
+  position: absolute;
+  top: 20%;
+  right: 5%;
+}
+
+
+/******************** Formulaire ********************/
+#choisir{
+    margin-left: 33%;
+    padding-bottom: 2%;
+}
+
+.bt-ch{
+    margin: 2%;
+}
 
 /******************** Formulaire ********************/
 #h2-devis, h4{
@@ -35,16 +94,15 @@ a{
 
 #form-devis{
     text-align: center;
+    padding-bottom: 2%;
 }
+
 
 #input-name, #input-prenom, #input-email, #input-subject, #input-message, #input-langueSource, #input-langueArrivee, #input-file{
     border: 1px solid #ffa20c;
     margin: 8px;
-    padding: 8px;
-}
-
-#input-file{
-    
+    padding: 14px;
+    padding-right: 10%;
 }
 
 #input-submit{

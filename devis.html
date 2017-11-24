@@ -8,6 +8,11 @@
         <title>Africtrad</title>
         <script src=""></script>
         
+        <script type="text/javascript">
+            function afficher(etat){ document.getElementById("langue").style.visibility=etat;
+            }
+        </script>
+        
         <!-- Stylesheets -->
 	<link rel="stylesheet" href="css/html5reset.css" media="all">
 	<link rel="stylesheet" href="css/col.css" media="all">
@@ -96,6 +101,26 @@
         
         <h4>Groupe AFRICTRAD</h4>
         
+<!--
+        <div id="champ">Affichage du div</div>  
+  
+            <form name="formulaire"  action="" method="" >
+
+            Afficher <input type="radio" name="choix" value="oui" onclick="afficher('visible');" checked="checked" />
+            Cacher <input type="radio" name="choix" value="non" onclick="afficher('hidden');" />
+
+            </form>
+-->
+        
+        <div id="choisir">
+           
+            <form name="formulaire"  action="" method="">
+                <input type="radio" name="devis" value="oui" class="bt-ch" onclick="afficher('visible');" checked="checked"> Traduction
+                <input type="radio" name="devis" value="non" class="bt-ch" onclick="afficher('hidden');"> Cours de Langue
+                <input type="radio" name="devis" value="non" class="bt-ch" onclick="afficher('hidden');"> Interprétation
+            </form>
+        </div> 
+        
         <div id="form-devis">
             
                 <form class="cf">
@@ -104,19 +129,52 @@
                     <input type="email" id="input-email" placeholder="Adresse E-mail"> 
                     <input type="text" id="input-subject" placeholder="Sujet"> <br />
                     <textarea name="message" type="text" id="input-message" placeholder="Message..."></textarea> <br />
-                    <input type="text" id="input-langueSource" placeholder="Langue Source"> <br />
-                    <input type="text" id="input-langueArrivee" placeholder="Langue Arivee"> <br />
+                    <div id="langue">
+                        <input type="text" id="input-langueSource" placeholder="Langue Source"> <br />
+                        <input type="text" id="input-langueArrivee" placeholder="Langue Arivee"> <br />
+                    </div>
                     
                     <input id="input-file" type="file" name="Fichier" /> <br />
 
                     <input type="submit" value="Envoyer" id="input-submit">
                 </form>
             
-        </div>
+        </div><!--FIN form-devis-->
+        
     </body>
     
     <footer>
-    
+        <div class="col span_1_of_3">
+            <div class="col span1_of_2">
+                <img src="src/img/icone_map.png" alt="Icône map">
+            </div>
+            <div class="col span1_of_2">
+                Angré, 8ème Tranche, COCODY
+                <br>
+                Abidjan, Côte d'ivoire
+            </div>
+        </div>
+        <div class="col span_1_of_3">
+            <div class="col span1_of_2">
+                <img src="src/img/icone_phone.png" alt="Icône Téléphone">
+            </div>
+            <div class="col span1_of_2">
+                Tél : +225 45 60 06 19
+                <br>
+                Tél : +225 04 76 70 08
+                <br>
+                Email : laminekane@africtrad.org
+            </div>
+        </div>
+        <div id="cpr" class="col span_1_of_3">
+            @2017
+            <br>
+            Crée par Chloé Cauqant
+            <br>
+            Chloé Chagot
+            <br>
+            Florine Robitaille
+        </div>
     </footer>
 <!--fin-->
 </html>
