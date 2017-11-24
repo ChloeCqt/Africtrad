@@ -32,7 +32,7 @@ h2 {
         background-color: #f9ad3f;
         text-align: center;
         color: white;
-        font-size : 150%;
+        font-size : 140%;
         font-family : 'Fjalla One', serif;
         padding-top : 3%;
         padding-bottom : 3%;
@@ -40,7 +40,16 @@ h2 {
         margin-top : 3%;
     }
 
-    header .nav-bar img{
+    header .nav-bar .bouton:hover {
+        background-color: #ffa119;
+        transition: 0.2s;  
+        border-style: solid;
+        border-width: 3px;
+    }
+
+    header .nav-bar .bouton
+
+ .nav-bar img{
         max-width: 80%;
         display: block;
         margin-left: auto;
@@ -178,7 +187,7 @@ h2 {
 
     .sb-icon-search {
         color: #fff;
-        background: #f9ad3f;
+        background: #ffa119;
         font-size: 22px;
         font-family: 'icomoon';
         speak: none;
@@ -211,7 +220,7 @@ h2 {
 
     .sb-search.sb-search-open .sb-icon-search,
     .no-js .sb-search .sb-icon-search {
-        background: #f9ad3f;
+        background: #ffa119;
         color: #fff;
     }
 
@@ -228,14 +237,13 @@ h2 {
 body #apropos{
     background-color: #3d3d3d;
     color : white;
+    padding: 5% 0;
 }
 
     /*TITRE*/
     body #apropos h2{
         color : #f9ad3f;
         margin-left : 10%;
-        padding-top : 2%;
-        padding-bottom: 2%;
         font-family: 'Fjalla One', serif;
     }
     /******************/    
@@ -380,7 +388,7 @@ footer div{
     padding: 0;
     margin: 0;
     color: white;
-    font-size: 60%;
+    font-size: 100%;
     
 }
 
