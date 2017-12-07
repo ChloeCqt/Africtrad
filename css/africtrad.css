@@ -66,6 +66,9 @@ h2 {
         background: white;
     }
 
+div.col.span_1_of_5 {
+    padding-top: 0.5%;
+}
     /******************/
 
     /*BANNIERE*/
@@ -473,7 +476,11 @@ footer div#cpr{
     
 }
 @media (max-width: 768px) {
-        
+    .section group desktop .bouton {
+        /*Ceci est un test*/
+        font-size: 100%;
+        background-color: navy;
+    }
 }
 @media (min-width: 641px) {
     .mobile{
