@@ -28,16 +28,20 @@
 	<link rel="stylesheet" href="css/11cols.css" media="all">
 	<link rel="stylesheet" href="css/12cols.css" media="all">
         
-    <link rel="stylesheet" href="css/africtrad.css" media="all">
-    <link rel="stylesheet" href="css/devis.css" media="all">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/nav.js"></script>
+        
     
+    <link rel="stylesheet" href="css/devis.css" media="all">
+    <link rel="stylesheet" href="css/africtrad.css" media="all">
         
         
     </head>
         
     
     <header>
-        <div class="nav-bar section group">
+        <div class="nav-bar section group desktop">
 
                 <div class="col span_1_of_5">
                     <a href="index.html#apropos">
@@ -77,6 +81,19 @@
                     </a>
                 </div>
         </div><!--FIN nav-bar-->
+        
+        <div class="nav-bar mobile">
+            <button class="hamburger">&#9776;</button>
+            <button class="cross">&#735;</button>
+            <div class="menu">
+              <ul>
+                <a href="index.html#apropos"><li>A Propos</li></a>
+                <a href="index.html#services"><li>Nos Services</li></a>
+                <a href="devis.html"><li>Devis</li></a>
+                 <a href="contact-form"><li>Contact</li></a>
+              </ul>
+            </div> 
+        </div>
         
     </header>
     
@@ -120,9 +137,8 @@
             
         </div><!--FIN form-devis-->
         
-    </body>
-    
-    <footer>
+        
+        <footer>
         <div class="col span_1_of_3">
             <div class="col span1_of_2">
                 <img src="src/img/icone_map.png" alt="Icône map">
@@ -155,5 +171,8 @@
             Florine Robitaille
         </div>
     </footer>
+    </body>
+    
+    
 <!--fin-->
 </html>

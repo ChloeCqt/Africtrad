@@ -379,8 +379,8 @@ body #clients{
 /*FOOTER*/
 footer {
     background-color:#3d3d3d; 
-    padding-top: 2%;
-    padding-bottom:7%;
+   /* padding-top: 2%;
+    padding-bottom:7%;*/
 }
 
 footer .col.span_1_of_3 img{
