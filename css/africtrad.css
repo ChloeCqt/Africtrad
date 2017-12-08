@@ -50,7 +50,7 @@ h2 {
     header .nav-bar .bouton
 
  .nav-bar img{
-        max-width: 80%;
+        max-width: 100%;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -66,6 +66,9 @@ h2 {
         background: white;
     }
 
+div.col.span_1_of_5 {
+    padding-top: 0.5%;
+}
     /******************/
 
     /*BANNIERE*/
@@ -464,16 +467,50 @@ footer div#cpr{
 
 /* END SERVICES */
 @media (max-width: 1920px) {
-    
+    .text-service p{
+        font-size: 120%;
+        line-height: 25px;
+    }
 }
 @media (max-width: 1440px) {
-    
+     /* SERVICE */
+     .text-service{
+        font-size: 100%;
+        line-height: 22px;
+        padding: 0 15px;
+    }
+     /* END SERVICE */
 }
 @media (max-width: 1150px) {
-    
+    .text-service p{
+        font-size: 100%;
+        line-height: 22px;
+    }
 }
+@media (max-width: 1150px) {
+    .text-service p{
+        font-size: 90%;
+        line-height: 20px;
+    }
+    .title-column{
+        font-size: 100%;
+        line-height: 30px;
+    }
+}
+
 @media (max-width: 768px) {
-        
+    .text-service p {
+        font-size: 75%;
+        line-height: 18px;
+    }  
+    .title-column{
+        font-size: 80%;
+        line-height: 20px;
+        letter-spacing: 4px;
+    }
+    .nav-bar .col{
+        font-size: 100%;
+    }
 }
 @media (min-width: 641px) {
     .mobile{
