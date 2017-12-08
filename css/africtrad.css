@@ -277,7 +277,8 @@ body #apropos{
 }
 
 #bt{
-    margin-left: 19%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .bouton-devis {
@@ -508,7 +509,7 @@ footer div#cpr{
         line-height: 20px;
         letter-spacing: 4px;
     }
-    .nav-bar .col{
+    header .nav-bar .bouton{
         font-size: 100%;
     }
 }
@@ -516,11 +517,43 @@ footer div#cpr{
     .mobile{
         display: none;
     }
+    
+    
 }
 @media (max-width: 640px) {
     .desktop{
         display: none;
     }
+    
+    /*Search Bar*/
+    
+    .sb-icon-search, .sb-search-submit{
+        width: 60px;
+        height: 40px;
+        line-height: 40px;
+    
+    }
+    
+    .sb-search-input{
+        padding: 0px 65px 13px 0px;
+    }
+    /****End Search Bar*****/
+
+    
+    /*DEVIS*/
+    #bt{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+    }
+    
+    div.bouton-devis {
+        margin-bottom: 7%;
+    }
+    
+    /****End devis*****/
 
         /* SERVICE */
     .service{
