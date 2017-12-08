@@ -129,8 +129,49 @@ i{
     
 }
 @media (max-width: 768px) {
+    /* Choisir */
+    #choisir{
+        margin-left: 25%;
+        padding-bottom: 2%;
+        font-size: 14px;
+    }
+
+    .bt-ch{
+        margin: 2%;
+    }
+    
+    /* Formulaire */
+    #h2-devis{
+        padding-bottom: 0;
+        font-size: 26px;
+    }
+    
+    h4{
+        padding-bottom: 5%;
+    }
+
+    #input-name, #input-prenom, #input-email, #input-subject, #input-message, #input-langueSource, #input-langueArrivee, #input-file{
+        margin: 8px;
+        padding: 14px;
+        padding-right: 20%;
+    }
+    
+    #input-message, #input-langueSource, #input-langueArrivee, #input-file{
+        margin: 8px;
+        padding: 14px;
+        padding-right: 20%;
+        width: 65%;
+    }
+
+    #input-submit{
+        margin: 8px;
+        padding: 3%;
+        width: 150px;
+        font-size: 14px; 
+    }
         
-}
+}/***** FIN media 768 *****/
+
 @media (max-width: 640px) {
     
     /* Nav Bar */
