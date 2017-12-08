@@ -508,6 +508,9 @@ footer div#cpr{
         line-height: 20px;
         letter-spacing: 4px;
     }
+    .nav-bar .col{
+        font-size: 100%;
+    }
 }
 @media (min-width: 641px) {
     .mobile{
