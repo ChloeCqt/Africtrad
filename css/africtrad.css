@@ -554,7 +554,7 @@ footer div#cpr{
         margin-bottom: 7%;
     }
     
-    /****End devis*****/
+    eye-for-ebony-399310.jpg
 
         /* SERVICE */
     .service{
@@ -578,6 +578,24 @@ footer div#cpr{
         padding: 0 15px;
     }
         /* END SERVICE */
+    
+    /****CONTACT*****/
+    #input-name, #input-prenom, #input-email, #input-subject, #input-message, #input-langueSource, #input-langueArrivee, #input-file{
+    margin: 8px;
+    padding: 8px;
+    width: 70%;
+    }
+
+    #input-submit{
+        margin: 8px;
+        padding: 8px;
+        width: 150px;
+        font-size: 14px;
+    }
+    
+    /****FIN Contact****/
+    
+    
 }
 
 @media (max-width: 320px) {
