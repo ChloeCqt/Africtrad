@@ -377,31 +377,44 @@ body #clients{
 /******************/
 
 /*FOOTER*/
-footer {
+.footer {
     background-color:#3d3d3d; 
-   /* padding-top: 2%;
-    padding-bottom:7%;*/
-}
-
-footer .col.span_1_of_3 img{
-    width : 50%;
-    padding-left: 40%;
-}
-
-footer div{
-    font-family: "Open Sans";
-    padding: 0;
-    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     color: white;
+    padding: 2% 0;
+}
+.footer-item{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.col-img{
+    text-align: center;
+    position: relative;
+}
+.col-img img{
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.col-text{
+    position: relative;
+}
+.col-text p{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
     font-size: 100%;
-    
+    line-height: 20px;
 }
-
-footer div#cpr{
+.col-right{
     text-align: right;
-    margin: auto;
+    padding-right: 5%;
+    font-size: 100%;
+    line-height: 20px;
 }
-
 /******************/
 
 
@@ -498,6 +511,14 @@ footer div#cpr{
         font-size: 100%;
         line-height: 30px;
     }
+    .col-text p{
+        font-size: 80%;
+        line-height: 15px;
+    }
+    .col-right{
+        font-size: 80%;
+        line-height: 15px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -512,6 +533,14 @@ footer div#cpr{
     }
     header .nav-bar .bouton{
         font-size: 100%;
+    }
+    .col-text p {
+        font-size: 60%;
+        line-height: 13px;
+    }
+    .col-right{
+        font-size: 60%;
+        line-height: 13px; 
     }
 }
 @media (min-width: 641px) {
@@ -553,15 +582,14 @@ footer div#cpr{
     div.bouton-devis {
         margin-bottom: 7%;
     }
-    
-    eye-for-ebony-399310.jpg
 
         /* SERVICE */
     .service{
-        grid-template-columns: 100%;
+        grid-template-columns: 1fr;
         padding: 0 15px;
     }
     .text-service{
+        text-transform: uppercase;
         font-size: 80%;
         line-height: 20px;
         padding: 0 15px;
